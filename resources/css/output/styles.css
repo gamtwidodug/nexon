@@ -366,7 +366,7 @@ legend {
   justify-content: center;
   flex-direction: row;
   outline-offset: -0.4rem;
-  outline: 2px solid #246beb;
+  outline: 2px solid #2098db;
   font-family: "NEXON Lv2 Gothic";
   font-size: 1.5rem;
   color: #fff;
@@ -387,21 +387,21 @@ legend {
   padding: 10vw 0;
 }
 .sec-g__tit {
-  padding-bottom: 2.34375vw;
+  font-weight: normal;
+  position: relative;
   font-family: "NEXON Lv2 Gothic";
-  font-style: bold;
-  color: #fff;
-  font-size: 5rem;
 }
 .sec-g__more {
   display: flex;
   align-items: center;
   gap: 10px;
   right: 20px;
+  position: relative;
   font-family: "NEXON Lv2 Gothic";
   color: #fff;
   font-size: 2rem;
-  margin-top: 30px;
+  padding-bottom: 15px;
+  margin-top: 25px;
 }
 @media (min-width: 600px) {
   .sec-g__more {
@@ -497,7 +497,7 @@ legend {
   position: relative;
 }
 #gnb .gnb__depth1 > li:hover > a > span {
-  color: #246beb;
+  color: #2098db;
 }
 #gnb .gnb__depth1 > li:hover > a > span::after {
   width: 100%;
@@ -535,7 +535,7 @@ legend {
   transform: translateX(-50%);
   width: 0;
   height: 2px;
-  background: #246beb;
+  background: #2098db;
   transition: all 0.3s;
 }
 #gnb .gnb__depth2 {
@@ -657,77 +657,18 @@ legend {
   --swiper-theme-color: $white;
 }
 
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-.swiper .swiper-slide {
-  font-family: "NEXON Lv2 Gothic";
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.swiper .swiper-slide img {
+.nextbtn {
   display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.swiper a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  display: none;
-}
-
-.swiper-button-next::before,
-.swiper-button-prev::before {
-  font-family: "Line Awesome Free";
-  font-weight: 900;
-  font-size: 3rem;
-  color: #000;
-  opacity: 0.5;
-}
-
-.swiper-button-next::before {
-  content: "\f138";
-}
-
-.swiper-button-prev::before {
-  content: "\f137";
-}
-
-.tpo_btn {
-  width: 49px;
-  height: 49px;
-  bottom: 60px;
-  right: 20px;
-  border-radius: 50px;
-  background: #191b1d;
-  color: #fff;
-  border: none;
-  font-weight: bold;
+  background-color: #2098db;
+  height: 150px;
+  width: 400px;
+  margin-top: 50px;
 }
 
 .slide-intro .swiper-slide {
   position: relative;
-}
-.slide-intro .swiper-slide::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 10px;
-  background-color: rgba(0, 0, 0, 0.14);
+  height: 350px;
+  width: 300px;
 }
 .slide-intro .swiper-slide.swiper-slide-active .text-area {
   opacity: 1;
@@ -736,37 +677,6 @@ legend {
 .slide-intro .swiper-slide img {
   -o-object-position: 50% 100%;
      object-position: 50% 100%;
-}
-.slide-intro .swiper-slide .text-area {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  width: 70%;
-  max-width: 400px;
-  opacity: 0;
-  transition: all 0.5s;
-}
-.slide-intro .swiper-slide .text-area__tit {
-  font-family: "NEXON Lv2 Gothic";
-  font-size: 4rem;
-  color: #fff;
-  font-family: "GmarketSansMedium";
-  font-weight: 700;
-}
-.slide-intro .swiper-slide .text-area__cont {
-  font-family: "NEXON Lv2 Gothic";
-  font-size: 2rem;
-  color: #fff;
-}
-.slide-intro .swiper-slide .text-area__goto {
-  border-radius: 15px;
-  font-family: "NEXON Lv2 Gothic";
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: #246beb;
-  color: #fff;
 }
 .slide-intro .swiper-slide img {
   height: 50vh;
@@ -809,6 +719,14 @@ legend {
     display: none;
   }
 }
+.sec-visual .sec-g__tit {
+  font-weight: 100;
+  position: relative;
+  font-family: "NEXON Lv2 Gothic";
+  color: #000;
+  font-size: 7.3011734029vw;
+}
+
 .slide-studio {
   overflow: visible;
   width: 80%;
@@ -834,90 +752,103 @@ legend {
   margin-bottom: 20px;
 }
 
-.sec-archive {
-  position: relative;
-  display: block;
-  background: url(../../../resources/images/pattern/game/gourmet_research_society.jpg) no-repeat 0 0;
-  background-size: cover;
-  color: #fff;
+.sec-introduce .span {
+  font-size: 2rem;
 }
-.sec-archive::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.35);
+.sec-introduce .sec-g__tit {
+  font-weight: bold;
+  margin-bottom: 10px;
 }
-
-.sec-df {
-  position: relative;
-  display: block;
-  background: url(../../../resources/images/pattern/game/d&f_artwork.jpg) no-repeat 0 0;
-  background-size: 250%;
-}
-.sec-df::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.35);
-}
-
-.sec-mabi {
-  position: relative;
-  color: #fff;
-  display: block;
-  background: url(../../../resources/images/pattern/game/mabinogi.jpg) no-repeat 0 0;
-  background-size: 150%;
-}
-.sec-mabi::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.35);
-}
-
-.sec-g__tit {
-  font-size: 3.2rem;
-}
-
-.sec-g__cont {
-  font-size: 1.5rem;
-  color: #fff;
-}
-
-.sec-g__shapcont {
-  font-size: 1.2rem;
-  color: #fff;
-  margin-top: 5px;
-}
-
-.crafting_games {
+.sec-introduce .sec-introduce {
   font-family: "NEXON Lv2 Gothic";
   font-size: 1.8rem;
   font-weight: normal;
-  color: #8e8e8e;
+  color: #1d1d1d;
   margin-top: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.sec-introduce .inner1 {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: url(../../../resources/images/pattern/game/blue_archive_gif.gif) no-repeat 0 0;
+  background-size: cover;
+  color: #fff;
+}
+.sec-introduce .inner1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.24);
+}
+.sec-introduce .inner2 {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: url(../../../resources/images/pattern/game/dnf_gif.gif) no-repeat 0 0;
+  background-size: cover;
+}
+.sec-introduce .inner2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.24);
+}
+.sec-introduce .inner3 {
+  position: relative;
+  color: #fff;
+  display: block;
+  width: 100%;
+  background: url(../../../resources/images/pattern/game/mabinogi_gif.gif) no-repeat 0 0;
+  background-size: cover;
+}
+.sec-introduce .inner3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.24);
+}
+.sec-introduce .sec-g__tit {
+  font-size: 3.2rem;
+}
+.sec-introduce .sec-g__cont {
+  position: relative;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.sec-introduce .sec-g__shapcont {
+  position: relative;
+  font-size: 1.3rem;
+  color: #fff;
+  margin-top: 5px;
+}
 
-.ngame {
+.sec-crafting .crafting_games {
+  background: #2098db;
+  background-size: 30px, 20px;
+  font-family: "NEXON Lv2 Gothic";
+  color: #8e8e8e;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+.sec-crafting .sec-ngame {
   font-family: "NEXON Lv2 Gothic";
   font-size: 5rem;
   font-weight: bold;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 255px;
 }
 
 .gameup {
@@ -928,14 +859,6 @@ legend {
   margin-left: 13px;
   margin-bottom: 5px;
   margin-top: 150px;
-}
-
-.aboutimg {
-  display: block;
-  inline-size: 80%;
-  margin-top: 60px;
-  margin-bottom: 50px;
-  margin-left: 50px;
 }
 
 .seolmyeong {
@@ -956,47 +879,72 @@ legend {
   margin-bottom: 30px;
 }
 
-.about1 {
-  margin-bottom: 10px;
+.sec-seolmyeong {
+  font-size: 1.5rem;
 }
-
-.about2 {
-  margin-bottom: 10px;
-}
-
-.about3 {
-  margin-bottom: 10px;
-}
-
-.wearestit1 {
+.sec-seolmyeong .aboutimg {
   display: block;
+  inline-size: 90%;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.sec-seolmyeong .about1 {
+  font-family: "NEXON Lv2 Gothic";
+  word-break: keep-all;
+  width: 270px;
+  margin-bottom: 10px;
+}
+.sec-seolmyeong .about2 {
+  font-family: "NEXON Lv2 Gothic";
+  word-break: keep-all;
+  width: 270px;
+  margin-bottom: 10px;
+}
+.sec-seolmyeong .about3 {
+  font-family: "NEXON Lv2 Gothic";
+  word-break: keep-all;
+  width: 270px;
+  margin-bottom: 30px;
+}
+
+.sec-studio .sec-g__tsit {
+  font-family: "NEXON Lv2 Gothic";
+  font-weight: normal;
+  margin-bottom: 45px;
+  font-size: 2.5rem;
+}
+.sec-studio .wearestit1 {
+  display: block;
+  margin-right: auto;
   width: 300px;
   word-break: keep-all;
   margin-top: 10px;
   font-size: 2rem;
   margin-bottom: 5px;
 }
-
-.wearestit2 {
+.sec-studio .wearestit2 {
   display: block;
-  width: 260px;
+  margin-right: auto;
+  width: 270px;
   word-break: keep-all;
   margin-top: 10px;
   font-size: 2rem;
   margin-bottom: 5px;
 }
-
-.wearestit3 {
+.sec-studio .wearestit3 {
   display: block;
+  margin-right: auto;
   width: 700px;
   word-break: keep-all;
   margin-top: 10px;
   font-size: 2rem;
   margin-bottom: 5px;
 }
-
-.wearescont {
+.sec-studio .wearescont {
   display: block;
+  margin-right: auto;
   margin-bottom: 30px;
   text-align: left;
   font-size: 1.2rem;
@@ -1004,25 +952,42 @@ legend {
   font-style: normal;
   color: #8e8e8e;
 }
+.sec-studio ::before {
+  position: absolute;
+  background-color: rgb(170, 34, 34);
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  rotate: -55deg;
+}
 
-.newstits {
+.sec-news .newstits {
+  font-family: "NEXON Lv2 Gothic";
   font-weight: bold;
   color: #1d1d1d;
   display: block;
+  text-align: left;
 }
-
-.date {
+.sec-news .date {
   color: #8e8e8e;
   display: block;
+  text-align: left;
 }
 
-.caree {
+.sec-careers {
+  display: block;
+  width: auto;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sec-careers .caree {
   font-size: 3rem;
   margin-top: 100px;
   margin-bottom: 10px;
 }
-
-.careecont {
+.sec-careers .careecont {
   display: block;
   position: relative;
   background-origin: padding-box;
@@ -1033,8 +998,7 @@ legend {
   text-align: left;
   font-size: 1rem;
 }
-
-.careesq {
+.sec-careers .careesq {
   position: absolute;
   left: 5%;
   height: 40px;

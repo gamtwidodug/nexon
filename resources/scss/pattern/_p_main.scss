@@ -3,74 +3,41 @@
   --swiper-theme-color: $white;
 }
 
-// 전역 스타일
-.swiper {
-  width: 100%;
-  height: 100%;
-  .swiper-slide {
-    font-family: 'NEXON Lv2 Gothic';
-    text-align: center;
-    font-size: 18px;
-    background: $white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+// .tpo_btn {
+//   width: 49px;
+//   height: 49px;
+//   bottom: 60px;
+//   right: 20px;
+//   border-radius: 50px;
+//   background: #191b1d;
+//   color: #fff;
+//   border: none;
+//   font-weight: bold;
+// }
 
-    img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-  a {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-}
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  display: none;
-}
-.swiper-button-next::before,
-.swiper-button-prev::before {
-  @include lineAwesome;
-  font-size: 3rem;
-  color: $black;
-  opacity: 0.5;
-}
-.swiper-button-next::before {
-  content: '\f138';
-}
-.swiper-button-prev::before {
-  content: '\f137';
-}
-
-.tpo_btn {
-  width: 49px;
-  height: 49px;
-  bottom: 60px;
-  right: 20px;
-  border-radius: 50px;
-  background: #191b1d;
-  color: #fff;
-  border: none;
-  font-weight: bold;
+.nextbtn {
+  display: block;
+  background-color: $primary;
+  height: 150px;
+  width: 400px;
+  margin-top: 50px;
 }
 
 .slide-intro {
   .swiper-slide {
     position: relative;
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 10px;
-      background-color: rgba(0, 0, 0, 0.14);
-    }
+    height: 350px;
+    width: 300px;
+
+    // &::before {
+    //   content: '';
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   right: 0;
+    //   bottom: 0;
+    //   background-color: rgba(0, 0, 0, 0.14);
+    // }
     &.swiper-slide-active {
       .text-area {
         opacity: 1;
@@ -81,38 +48,40 @@
     img {
       object-position: 50% 100%;
     }
-    .text-area {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, 0);
-      width: 70%;
-      max-width: 400px;
-      opacity: 0;
-      transition: all 0.5s;
-      // .text-area__tit
-      &__tit {
-        font-family: 'NEXON Lv2 Gothic';
-        font-size: 4rem;
-        color: $white;
-        font-family: 'GmarketSansMedium';
-        font-weight: $font-bold;
-      }
-      &__cont {
-        font-family: 'NEXON Lv2 Gothic';
-        font-size: 2rem;
-        color: $white;
-      }
-      &__goto {
-        border-radius: 15px;
-        font-family: 'NEXON Lv2 Gothic';
-        display: inline-block;
-        margin-top: 20px;
-        padding: 10px 20px;
-        background: $primary;
-        color: $white;
-      }
-    }
+    //이거 안쓰는 영상돌아가는거 설명이랑 더보기 버튼
+    // .text-area {
+    //   position: absolute;
+    //   top: 50%;
+    //   left: 50%;
+    //   transform: translate(-50%, 0);
+    //   width: 70%;
+    //   max-width: 400px;
+    //   opacity: 0;
+    //   transition: all 0.5s;
+    //   // .text-area__tit
+    // &__tit {
+    //   font-family: 'NEXON Lv2 Gothic';
+    //   font-size: 4rem;
+    //   color: $white;
+    //   font-family: 'GmarketSansMedium';
+    //   font-weight: $font-bold;
+    // }
+    //   &__cont {
+    //     font-family: 'NEXON Lv2 Gothic';
+    //     font-size: 2rem;
+    //     color: $white;
+    //   }
+    //   &__goto {
+    //     border-radius: 15px;
+    //     font-family: 'NEXON Lv2 Gothic';
+    //     display: inline-block;
+    //     margin-top: 20px;
+    //     padding: 10px 20px;
+    //     background: $primary;
+    //     color: $white;
+    //   }
+    // }
+
     img {
       height: 50vh;
     }
@@ -164,6 +133,16 @@
   }
 }
 
+.sec-visual {
+  .sec-g__tit {
+    font-weight: 100;
+    position: relative;
+    font-family: 'NEXON Lv2 Gothic';
+    color: $black;
+    font-size: calc(100vw * (56 / 767));
+  }
+}
+
 .slide-studio {
   overflow: visible;
   width: 80%;
@@ -179,94 +158,119 @@
     bottom: -50px;
   }
 }
+
 .sec-g__whowestit {
   font-family: 'Pretendard-Regular';
   margin-bottom: 20px;
 }
 
-.sec-archive {
-  position: relative;
-  display: block;
-  background: url(../../../resources/images/pattern/game/gourmet_research_society.jpg) no-repeat 0 0;
-  background-size: cover;
-  color: $white;
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.35);
+//사진 세 개 있는거
+.sec-introduce {
+  .span {
+    font-size: 2rem;
+  }
+  .sec-g__tit {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .sec-introduce {
+    font-family: 'NEXON Lv2 Gothic';
+    font-size: 1.8rem;
+    font-weight: normal;
+    color: $gray-90;
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inner1 {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: url(../../../resources/images/pattern/game/blue_archive_gif.gif) no-repeat 0 0;
+    background-size: cover;
+    color: $white;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.24);
+    }
+  }
+
+  .inner2 {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: url(../../../resources/images/pattern/game/dnf_gif.gif) no-repeat 0 0;
+    background-size: cover;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.24);
+    }
+  }
+
+  .inner3 {
+    position: relative;
+    color: $white;
+    display: block;
+    width: 100%;
+    background: url(../../../resources/images/pattern/game/mabinogi_gif.gif) no-repeat 0 0;
+    background-size: cover;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.24);
+    }
+  }
+
+  .sec-g__tit {
+    font-size: 3.2rem;
+  }
+  .sec-g__cont {
+    position: relative;
+    font-size: 1.5rem;
+    color: $white;
+  }
+  .sec-g__shapcont {
+    position: relative;
+    font-size: 1.3rem;
+    color: $white;
+    margin-top: 5px;
   }
 }
 
-.sec-df {
-  position: relative;
-  display: block;
-  background: url(../../../resources/images/pattern/game/d&f_artwork.jpg) no-repeat 0 0;
-  background-size: 250%;
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.35);
+.sec-crafting {
+  .crafting_games {
+    background: $primary;
+    background-size: 30px, 20px;
+    font-family: 'NEXON Lv2 Gothic';
+    color: $gray-50;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
   }
-}
 
-.sec-mabi {
-  position: relative;
-  color: $white;
-  display: block;
-  background: url(../../../resources/images/pattern/game/mabinogi.jpg) no-repeat 0 0;
-  background-size: 150%;
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.35);
+  .sec-ngame {
+    font-family: 'NEXON Lv2 Gothic';
+    font-size: 5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
   }
-}
-.sec-g__tit {
-  font-size: 3.2rem;
-}
-
-.sec-g__cont {
-  font-size: 1.5rem;
-  color: $white;
-}
-
-.sec-g__shapcont {
-  font-size: 1.2rem;
-  color: $white;
-  margin-top: 5px;
-}
-
-.crafting_games {
-  font-family: 'NEXON Lv2 Gothic';
-  font-size: 1.8rem;
-  font-weight: normal;
-  color: $gray-50;
-  margin-top: 120px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.ngame {
-  font-family: 'NEXON Lv2 Gothic';
-  font-size: 5rem;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 255px;
 }
 
 .gameup {
@@ -279,13 +283,6 @@
   margin-top: 150px;
 }
 
-.aboutimg {
-  display: block;
-  inline-size: 80%;
-  margin-top: 60px;
-  margin-bottom: 50px;
-  margin-left: 50px;
-}
 .seolmyeong {
   font-size: 3.2vw;
   font-weight: bold;
@@ -303,91 +300,143 @@
   margin-top: 10px;
   margin-bottom: 30px;
 }
+//about
+.sec-seolmyeong {
+  font-size: 1.5rem;
+  .aboutimg {
+    display: block;
+    inline-size: 90%;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .about1 {
+    font-family: 'NEXON Lv2 Gothic';
+    word-break: keep-all;
+    width: 270px;
+    margin-bottom: 10px;
+  }
 
-.about1 {
-  margin-bottom: 10px;
+  .about2 {
+    font-family: 'NEXON Lv2 Gothic';
+    word-break: keep-all;
+    width: 270px;
+    margin-bottom: 10px;
+  }
+
+  .about3 {
+    font-family: 'NEXON Lv2 Gothic';
+    word-break: keep-all;
+    width: 270px;
+    margin-bottom: 30px;
+  }
 }
 
-.about2 {
-  margin-bottom: 10px;
+//이거 세로로 세 개 그거
+.sec-studio {
+  .sec-g__tsit {
+    font-family: 'NEXON Lv2 Gothic';
+    font-weight: normal;
+    margin-bottom: 45px;
+    font-size: 2.5rem;
+  }
+  .wearestit1 {
+    display: block;
+    margin-right: auto;
+    width: 300px;
+    word-break: keep-all;
+    margin-top: 10px;
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+  .wearestit2 {
+    display: block;
+    margin-right: auto;
+    width: 270px;
+    word-break: keep-all;
+    margin-top: 10px;
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+  .wearestit3 {
+    display: block;
+    margin-right: auto;
+    width: 700px;
+    word-break: keep-all;
+    margin-top: 10px;
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+
+  .wearescont {
+    display: block;
+    margin-right: auto;
+    margin-bottom: 30px;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-style: normal;
+    color: $gray-50;
+  }
+  ::before {
+    position: absolute;
+    background-color: rgb(170, 34, 34);
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    rotate: -55deg;
+  }
 }
 
-.about3 {
-  margin-bottom: 10px;
-}
+//슬라이드인 뉴스
+.sec-news {
+  .newstits {
+    font-family: 'NEXON Lv2 Gothic';
+    font-weight: bold;
+    color: $gray-90;
+    display: block;
+    text-align: left;
+  }
 
-.wearestit1 {
+  .date {
+    color: $gray-50;
+    display: block;
+    text-align: left;
+  }
+}
+//밑에 커리어 그거
+.sec-careers {
   display: block;
-  width: 300px;
-  word-break: keep-all;
-  margin-top: 10px;
-  font-size: 2rem;
-  margin-bottom: 5px;
-}
-.wearestit2 {
-  display: block;
-  width: 260px;
-  word-break: keep-all;
-  margin-top: 10px;
-  font-size: 2rem;
-  margin-bottom: 5px;
-}
-.wearestit3 {
-  display: block;
-  width: 700px;
-  word-break: keep-all;
-  margin-top: 10px;
-  font-size: 2rem;
-  margin-bottom: 5px;
-}
+  width: auto;
+  height: 400px;
+  object-fit: cover;
 
-.wearescont {
-  display: block;
-  margin-bottom: 30px;
-  text-align: left;
-  font-size: 1.2rem;
-  font-weight: normal;
-  font-style: normal;
-  color: $gray-50;
-}
+  .caree {
+    font-size: 3rem;
+    margin-top: 100px;
+    margin-bottom: 10px;
+  }
 
-.newstits {
-  font-weight: bold;
-  color: $gray-90;
-  display: block;
-}
-
-.date {
-  color: $gray-50;
-  display: block;
-}
-
-.caree {
-  font-size: 3rem;
-  margin-top: 100px;
-  margin-bottom: 10px;
-}
-
-.careeimg {
-}
-
-.careecont {
-  display: block;
-  position: relative;
-  background-origin: padding-box;
-  left: 0;
-  bottom: 5%;
-  width: 170px;
-  height: 35px;
-  text-align: left;
-  font-size: 1rem;
-}
-.careesq {
-  position: absolute;
-  left: 5%;
-  height: 40px;
-  width: 200px;
-  padding-top: 4vw;
-  padding-right: 5vw;
-  background-color: rgb(161, 211, 230);
+  .careecont {
+    display: block;
+    position: relative;
+    background-origin: padding-box;
+    left: 0;
+    bottom: 5%;
+    width: 170px;
+    height: 35px;
+    text-align: left;
+    font-size: 1rem;
+  }
+  .careesq {
+    position: absolute;
+    left: 5%;
+    height: 40px;
+    width: 200px;
+    padding-top: 4vw;
+    padding-right: 5vw;
+    background-color: rgb(161, 211, 230);
+  }
 }

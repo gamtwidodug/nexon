@@ -54,11 +54,9 @@
   overflow: hidden;
   padding: 10vw 0;
   &__tit {
-    padding-bottom: 2.34375vw;
+    font-weight: normal;
+    position: relative;
     font-family: 'NEXON Lv2 Gothic';
-    font-style: bold;
-    color: $white;
-    font-size: 5rem;
   }
   &__more {
     display: flex;
@@ -67,11 +65,13 @@
     // position: absolute;
     // top: 17px;
     right: $p-mobile;
+    position: relative;
     font-family: 'NEXON Lv2 Gothic';
     color: $white;
     font-size: 2rem;
+    padding-bottom: 15px;
+    margin-top: 25px;
 
-    margin-top: 30px;
     @include mobileMore {
       right: $p-tablet;
     }
