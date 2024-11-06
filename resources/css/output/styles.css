@@ -954,7 +954,7 @@ legend {
 }
 .sec-studio ::before {
   position: absolute;
-  background-color: rgb(170, 34, 34);
+  background-color: #2098db;
   top: 0;
   bottom: 0;
   left: 10px;
