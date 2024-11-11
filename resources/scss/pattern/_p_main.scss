@@ -440,3 +440,29 @@
     background-color: rgb(161, 211, 230);
   }
 }
+
+.footer_top {
+  position: relative;
+  background-color: $gray-10;
+  .footer_menu {
+  }
+}
+
+.ft_wr {
+  position: relative;
+  display: fl;
+  max-width: 100%;
+  background-color: $gray-10;
+}
+
+.top_btn {
+  border-radius: 50px;
+  width: 59px;
+  height: 59px;
+  background: #191b1d;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  bottom: 100px;
+  right: 30px;
+}
