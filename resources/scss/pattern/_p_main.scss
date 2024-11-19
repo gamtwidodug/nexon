@@ -376,6 +376,7 @@
     text-align: left;
     font-size: 1.2rem;
     font-weight: normal;
+    font-family: 'NEXON Lv2 Gothic';
     font-style: normal;
     color: $gray-50;
   }
@@ -402,6 +403,7 @@
 
   .date {
     color: $gray-50;
+    font-family: 'NEXON Lv2 Gothic';
     display: block;
     text-align: left;
   }
@@ -444,6 +446,9 @@
 .footer_top {
   position: relative;
   background-color: $gray-10;
+  outline-width: 2px;
+  outline-color: $gray-90;
+
   .footer_menu {
   }
 }

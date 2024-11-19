@@ -1,5 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+@import url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff");
+@import url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff");
 /* reset */
 body,
 div,
@@ -653,28 +655,6 @@ legend {
   left: 0;
 }
 
-.footer_top {
-  position: relative;
-  background-color: #f0f0f0;
-}
-.ft_wr {
-  position: relative;
-  max-width: 100%;
-  background-color: #f0f0f0;
-}
-
-.top_btn {
-  border-radius: 50px;
-  width: 59px;
-  height: 59px;
-  background: #191b1d;
-  color: #fff;
-  border: none;
-  font-weight: bold;
-  bottom: 100px;
-  right: 30px;
-}
-
 :root {
   --swiper-theme-color: $white;
 }
@@ -971,6 +951,7 @@ legend {
   text-align: left;
   font-size: 1.2rem;
   font-weight: normal;
+  font-family: "NEXON Lv2 Gothic";
   font-style: normal;
   color: #8e8e8e;
 }
@@ -993,6 +974,7 @@ legend {
 }
 .sec-news .date {
   color: #8e8e8e;
+  font-family: "NEXON Lv2 Gothic";
   display: block;
   text-align: left;
 }
@@ -1033,10 +1015,12 @@ legend {
 .footer_top {
   position: relative;
   background-color: #f0f0f0;
+  outline-width: 2px;
+  outline-color: #1d1d1d;
 }
 .ft_wr {
   position: relative;
-  display: flex;
+  display: fl;
   max-width: 100%;
   background-color: #f0f0f0;
 }
