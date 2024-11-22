@@ -141,6 +141,13 @@
     color: $black;
     font-size: calc(100vw * (56 / 767));
   }
+  .tit2 {
+    font-weight: 500;
+    position: relative;
+    font-family: 'NEXON Lv2 Gothic';
+    color: $black;
+    font-size: calc(100vw * (56 / 767));
+  }
 }
 
 .slide-studio {
@@ -166,8 +173,17 @@
 
 //사진 세 개 있는거
 .sec-introduce {
-  .span {
+  .nexonsan {
     font-size: 2rem;
+
+    position: relative;
+    font-weight: normal;
+    padding-bottom: 15px;
+    font-size: 2.5rem;
+  }
+  .snboigi {
+    font-family: 'NEXON Lv2 Gothic';
+    margin-bottom: 2rem;
   }
   .sec-g__tit {
     font-weight: bold;
@@ -255,13 +271,20 @@
 
 .sec-crafting {
   .crafting_games {
-    background: $primary;
     background-size: 30px, 20px;
     font-family: 'NEXON Lv2 Gothic';
     color: $gray-50;
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
+  }
+  .bar {
+    display: block;
+    margin: 0 auto;
+    width: 1px;
+    height: 50px;
+    color: $primary;
+    box-sizing: border-box;
   }
 
   .sec-ngame {
